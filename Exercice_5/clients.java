@@ -4,16 +4,34 @@ public class clients {
 	private String nom;
 	private String adresse;
 	private double solde;
+	
 
-	public void setAccount(String nom, String adresse, double solde) {
-		this.nom = nom;
-		this.adresse = adresse;
-		this.solde = solde;
+	public String getNom() {
+		return nom;
 	}
 
-	public void getAccount() {
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public String getAdresse() {
+		return adresse;
+	}
+
+	public void setAdresse(String adresse) {
+		this.adresse = adresse;
+	}
+
+	public double getSolde() {
+		return solde;
+	}
+
+	public void setSolde(double solde) {
+		this.solde = solde;
+	}
+	
+	public void afficherAccount() {
 		System.out.println(nom + " a " + "(" + adresse + ")"
 				+ " - infos solde " + solde + "dh");
 	}
-
 }
